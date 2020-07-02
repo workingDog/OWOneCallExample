@@ -8,3 +8,11 @@
 
 Provides for current, forecast and historical weather data through a single function call.
 
+
+
+### Requirement
+
+Requires a valid OpenWeather key, see:
+
+-    [OpenWeather how to start](https://openweathermap.org/appid)
+
