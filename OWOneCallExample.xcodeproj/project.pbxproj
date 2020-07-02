@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C74525C324AD927B0096ED6C /* OWOneCall in Frameworks */ = {isa = PBXBuildFile; productRef = C74525C224AD927B0096ED6C /* OWOneCall */; };
+		C74525C524AD93910096ED6C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C74525C424AD93910096ED6C /* readme.md */; };
+		C76557B724AD883E00775A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557B624AD883E00775A92 /* AppDelegate.swift */; };
+		C76557B924AD883E00775A92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557B824AD883E00775A92 /* SceneDelegate.swift */; };
+		C76557BB24AD883E00775A92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557BA24AD883E00775A92 /* ContentView.swift */; };
+		C76557BD24AD883E00775A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76557BC24AD883E00775A92 /* Assets.xcassets */; };
+		C76557C024AD883E00775A92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76557BF24AD883E00775A92 /* Preview Assets.xcassets */; };
+		C76557C324AD883E00775A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76557C124AD883E00775A92 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C74525C424AD93910096ED6C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		C76557B324AD883E00775A92 /* OWOneCallExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWOneCallExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76557B624AD883E00775A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C76557B824AD883E00775A92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C76557BA24AD883E00775A92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C76557BC24AD883E00775A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C76557BF24AD883E00775A92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C76557C224AD883E00775A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C76557C424AD883E00775A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76557CA24AD885B00775A92 /* OWOneCallExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OWOneCallExample.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C76557B024AD883D00775A92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74525C324AD927B0096ED6C /* OWOneCall in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C76557AA24AD883D00775A92 = {
+			isa = PBXGroup;
+			children = (
+				C74525C424AD93910096ED6C /* readme.md */,
+				C76557B524AD883E00775A92 /* OWOneCallExample */,
+				C76557B424AD883E00775A92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C76557B424AD883E00775A92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C76557B324AD883E00775A92 /* OWOneCallExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C76557B524AD883E00775A92 /* OWOneCallExample */ = {
+			isa = PBXGroup;
+			children = (
+				C76557CA24AD885B00775A92 /* OWOneCallExample.entitlements */,
+				C76557B624AD883E00775A92 /* AppDelegate.swift */,
+				C76557B824AD883E00775A92 /* SceneDelegate.swift */,
+				C76557BA24AD883E00775A92 /* ContentView.swift */,
+				C76557BC24AD883E00775A92 /* Assets.xcassets */,
+				C76557C124AD883E00775A92 /* LaunchScreen.storyboard */,
+				C76557C424AD883E00775A92 /* Info.plist */,
+				C76557BE24AD883E00775A92 /* Preview Content */,
+			);
+			path = OWOneCallExample;
+			sourceTree = "<group>";
+		};
+		C76557BE24AD883E00775A92 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C76557BF24AD883E00775A92 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C76557B224AD883D00775A92 /* OWOneCallExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C76557C724AD883E00775A92 /* Build configuration list for PBXNativeTarget "OWOneCallExample" */;
+			buildPhases = (
+				C76557AF24AD883D00775A92 /* Sources */,
+				C76557B024AD883D00775A92 /* Frameworks */,
+				C76557B124AD883D00775A92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OWOneCallExample;
+			packageProductDependencies = (
+				C74525C224AD927B0096ED6C /* OWOneCall */,
+			);
+			productName = OWOneCallExample;
+			productReference = C76557B324AD883E00775A92 /* OWOneCallExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C76557AB24AD883D00775A92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					C76557B224AD883D00775A92 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = C76557AE24AD883D00775A92 /* Build configuration list for PBXProject "OWOneCallExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C76557AA24AD883D00775A92;
+			packageReferences = (
+				C74525C124AD927B0096ED6C /* XCRemoteSwiftPackageReference "OWOneCall" */,
+			);
+			productRefGroup = C76557B424AD883E00775A92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C76557B224AD883D00775A92 /* OWOneCallExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C76557B124AD883D00775A92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76557C324AD883E00775A92 /* LaunchScreen.storyboard in Resources */,
+				C76557C024AD883E00775A92 /* Preview Assets.xcassets in Resources */,
+				C74525C524AD93910096ED6C /* readme.md in Resources */,
+				C76557BD24AD883E00775A92 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C76557AF24AD883D00775A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76557B724AD883E00775A92 /* AppDelegate.swift in Sources */,
+				C76557B924AD883E00775A92 /* SceneDelegate.swift in Sources */,
+				C76557BB24AD883E00775A92 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C76557C124AD883E00775A92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C76557C224AD883E00775A92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C76557C524AD883E00775A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C76557C624AD883E00775A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C76557C824AD883E00775A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OWOneCallExample/OWOneCallExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OWOneCallExample/Preview Content\"";
+				DEVELOPMENT_TEAM = N7KF5K7NET;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OWOneCallExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ringo.onecall.com.OWOneCallExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C76557C924AD883E00775A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OWOneCallExample/OWOneCallExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OWOneCallExample/Preview Content\"";
+				DEVELOPMENT_TEAM = N7KF5K7NET;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OWOneCallExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ringo.onecall.com.OWOneCallExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C76557AE24AD883D00775A92 /* Build configuration list for PBXProject "OWOneCallExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76557C524AD883E00775A92 /* Debug */,
+				C76557C624AD883E00775A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C76557C724AD883E00775A92 /* Build configuration list for PBXNativeTarget "OWOneCallExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76557C824AD883E00775A92 /* Debug */,
+				C76557C924AD883E00775A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C74525C124AD927B0096ED6C /* XCRemoteSwiftPackageReference "OWOneCall" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/workingDog/OWOneCall.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C74525C224AD927B0096ED6C /* OWOneCall */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C74525C124AD927B0096ED6C /* XCRemoteSwiftPackageReference "OWOneCall" */;
+			productName = OWOneCall;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C76557AB24AD883D00775A92 /* Project object */;
+}
