@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C74525C324AD927B0096ED6C /* OWOneCall in Frameworks */ = {isa = PBXBuildFile; productRef = C74525C224AD927B0096ED6C /* OWOneCall */; };
+		C726901824AD9BCF00D5F140 /* OWOneCall in Frameworks */ = {isa = PBXBuildFile; productRef = C726901724AD9BCF00D5F140 /* OWOneCall */; };
 		C74525C524AD93910096ED6C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C74525C424AD93910096ED6C /* readme.md */; };
 		C76557B724AD883E00775A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557B624AD883E00775A92 /* AppDelegate.swift */; };
 		C76557B924AD883E00775A92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557B824AD883E00775A92 /* SceneDelegate.swift */; };
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C74525C324AD927B0096ED6C /* OWOneCall in Frameworks */,
+				C726901824AD9BCF00D5F140 /* OWOneCall in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			);
 			name = OWOneCallExample;
 			packageProductDependencies = (
-				C74525C224AD927B0096ED6C /* OWOneCall */,
+				C726901724AD9BCF00D5F140 /* OWOneCall */,
 			);
 			productName = OWOneCallExample;
 			productReference = C76557B324AD883E00775A92 /* OWOneCallExample.app */;
@@ -129,7 +129,7 @@
 			);
 			mainGroup = C76557AA24AD883D00775A92;
 			packageReferences = (
-				C74525C124AD927B0096ED6C /* XCRemoteSwiftPackageReference "OWOneCall" */,
+				C726901624AD9BCF00D5F140 /* XCRemoteSwiftPackageReference "OWOneCall" */,
 			);
 			productRefGroup = C76557B424AD883E00775A92 /* Products */;
 			projectDirPath = "";
@@ -365,20 +365,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C74525C124AD927B0096ED6C /* XCRemoteSwiftPackageReference "OWOneCall" */ = {
+		C726901624AD9BCF00D5F140 /* XCRemoteSwiftPackageReference "OWOneCall" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/workingDog/OWOneCall.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
+				minimumVersion = 1.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C74525C224AD927B0096ED6C /* OWOneCall */ = {
+		C726901724AD9BCF00D5F140 /* OWOneCall */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C74525C124AD927B0096ED6C /* XCRemoteSwiftPackageReference "OWOneCall" */;
+			package = C726901624AD9BCF00D5F140 /* XCRemoteSwiftPackageReference "OWOneCall" */;
 			productName = OWOneCall;
 		};
 /* End XCSwiftPackageProductDependency section */
