@@ -54,6 +54,8 @@ struct ContentView: View {
         // lat: -33.861536, lon: 151.215206,    //  Sydney
         // lat: 35.661991, lon: 139.762735,     // Tokyo
         
+        let myOptions = OWOptions(excludeMode: [.daily, .hourly, .minutely], units: .metric, lang: "en")
+        
         // for current and forecast
         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,
                                         weather: $weather,
