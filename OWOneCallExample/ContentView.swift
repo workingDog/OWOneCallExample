@@ -11,7 +11,7 @@ import OWOneCall
 
 struct ContentView: View {
     
-    let weatherProvider = OWProvider(apiKey: "your key")
+    let weatherProvider = OWProvider(apiKey: "your-key")
     let lang = "en"         // "ja"
     let frmt = "yyyy-MM-dd" // "yyyy年MM月dd日"
     
@@ -61,17 +61,17 @@ struct ContentView: View {
                                         weather: $weather,
                                         options: OWOptions.dailyForecast(lang: lang))
         
-        // old style callback
-        // weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: OWOptions.current()) { response in
-        //         if let theWeather = response {
-        //            self.weather = theWeather
-        //         }
-        // }
+//         old style callback
+//         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: OWOptions.dailyForecast(lang: lang)) { response in
+//                 if let theWeather = response {
+//                    self.weather = theWeather
+//                 }
+//         }
         
-        // for historical data in the past
-        // weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,
-        //                                  weather: $weather,
-        //                                  options: OWHistOptions.yesterday())
+         // for historical data in the past
+//         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,
+//                                          weather: $weather,
+//                                          options: OWHistOptions.yesterday())
     }
     
     func formattedDate(utc: Int) -> String {

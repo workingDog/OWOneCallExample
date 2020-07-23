@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C74525C524AD93910096ED6C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C74525C424AD93910096ED6C /* readme.md */; };
+		C7647AA924C9124500709B21 /* OWOneCall in Frameworks */ = {isa = PBXBuildFile; productRef = C7647AA824C9124500709B21 /* OWOneCall */; };
 		C76557B724AD883E00775A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557B624AD883E00775A92 /* AppDelegate.swift */; };
 		C76557B924AD883E00775A92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557B824AD883E00775A92 /* SceneDelegate.swift */; };
 		C76557BB24AD883E00775A92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557BA24AD883E00775A92 /* ContentView.swift */; };
 		C76557BD24AD883E00775A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76557BC24AD883E00775A92 /* Assets.xcassets */; };
 		C76557C024AD883E00775A92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76557BF24AD883E00775A92 /* Preview Assets.xcassets */; };
 		C76557C324AD883E00775A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76557C124AD883E00775A92 /* LaunchScreen.storyboard */; };
-		C7E1451A24BED37700A6265A /* OWOneCall in Frameworks */ = {isa = PBXBuildFile; productRef = C7E1451924BED37700A6265A /* OWOneCall */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7E1451A24BED37700A6265A /* OWOneCall in Frameworks */,
+				C7647AA924C9124500709B21 /* OWOneCall in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +62,10 @@
 		C76557B524AD883E00775A92 /* OWOneCallExample */ = {
 			isa = PBXGroup;
 			children = (
-				C76557CA24AD885B00775A92 /* OWOneCallExample.entitlements */,
+				C76557BA24AD883E00775A92 /* ContentView.swift */,
 				C76557B624AD883E00775A92 /* AppDelegate.swift */,
 				C76557B824AD883E00775A92 /* SceneDelegate.swift */,
-				C76557BA24AD883E00775A92 /* ContentView.swift */,
+				C76557CA24AD885B00775A92 /* OWOneCallExample.entitlements */,
 				C76557BC24AD883E00775A92 /* Assets.xcassets */,
 				C76557C124AD883E00775A92 /* LaunchScreen.storyboard */,
 				C76557C424AD883E00775A92 /* Info.plist */,
@@ -99,7 +99,7 @@
 			);
 			name = OWOneCallExample;
 			packageProductDependencies = (
-				C7E1451924BED37700A6265A /* OWOneCall */,
+				C7647AA824C9124500709B21 /* OWOneCall */,
 			);
 			productName = OWOneCallExample;
 			productReference = C76557B324AD883E00775A92 /* OWOneCallExample.app */;
@@ -129,7 +129,7 @@
 			);
 			mainGroup = C76557AA24AD883D00775A92;
 			packageReferences = (
-				C7E1451824BED37700A6265A /* XCRemoteSwiftPackageReference "OWOneCall" */,
+				C7647AA724C9124500709B21 /* XCRemoteSwiftPackageReference "OWOneCall" */,
 			);
 			productRefGroup = C76557B424AD883E00775A92 /* Products */;
 			projectDirPath = "";
@@ -365,20 +365,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C7E1451824BED37700A6265A /* XCRemoteSwiftPackageReference "OWOneCall" */ = {
+		C7647AA724C9124500709B21 /* XCRemoteSwiftPackageReference "OWOneCall" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/workingDog/OWOneCall";
+			repositoryURL = "https://github.com/workingDog/OWOneCall.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.2;
+				minimumVersion = 1.1.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C7E1451924BED37700A6265A /* OWOneCall */ = {
+		C7647AA824C9124500709B21 /* OWOneCall */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C7E1451824BED37700A6265A /* XCRemoteSwiftPackageReference "OWOneCall" */;
+			package = C7647AA724C9124500709B21 /* XCRemoteSwiftPackageReference "OWOneCall" */;
 			productName = OWOneCall;
 		};
 /* End XCSwiftPackageProductDependency section */
