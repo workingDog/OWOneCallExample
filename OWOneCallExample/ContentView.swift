@@ -11,7 +11,7 @@ import OWOneCall
 
 struct ContentView: View {
     
-    let weatherProvider = OWProvider(apiKey: "your-key")
+    let weatherProvider = OWProvider(apiKey: "your key here")
     let lang = "en"         // "ja"
     let frmt = "yyyy-MM-dd" // "yyyy年MM月dd日"
     
@@ -54,7 +54,7 @@ struct ContentView: View {
         // lat: -33.861536, lon: 151.215206,    //  Sydney
         // lat: 35.661991, lon: 139.762735,     // Tokyo
         
-        let myOptions = OWOptions(excludeMode: [.daily, .hourly, .minutely], units: .metric, lang: "en")
+  //      let myOptions = OWOptions(excludeMode: [.daily, .hourly, .minutely], units: .metric, lang: "en")
         
         // for current and forecast
         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,

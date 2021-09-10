@@ -8,28 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C74525C524AD93910096ED6C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C74525C424AD93910096ED6C /* readme.md */; };
-		C76557B724AD883E00775A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557B624AD883E00775A92 /* AppDelegate.swift */; };
-		C76557B924AD883E00775A92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557B824AD883E00775A92 /* SceneDelegate.swift */; };
 		C76557BB24AD883E00775A92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76557BA24AD883E00775A92 /* ContentView.swift */; };
 		C76557BD24AD883E00775A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76557BC24AD883E00775A92 /* Assets.xcassets */; };
 		C76557C024AD883E00775A92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76557BF24AD883E00775A92 /* Preview Assets.xcassets */; };
-		C76557C324AD883E00775A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76557C124AD883E00775A92 /* LaunchScreen.storyboard */; };
 		C7760EE624CDA3E5006E4879 /* OWExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7760EE524CDA3E5006E4879 /* OWExtensions.swift */; };
-		C7BBD1A624CDA38C00AEEE43 /* OWOneCall in Frameworks */ = {isa = PBXBuildFile; productRef = C7BBD1A524CDA38C00AEEE43 /* OWOneCall */; };
+		C7A588F426EB6A900081AD1E /* OWOneCallExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A588F326EB6A900081AD1E /* OWOneCallExampleApp.swift */; };
+		C7A588F726EB6B8C0081AD1E /* OWOneCall in Frameworks */ = {isa = PBXBuildFile; productRef = C7A588F626EB6B8C0081AD1E /* OWOneCall */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C74525C424AD93910096ED6C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		C76557B324AD883E00775A92 /* OWOneCallExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OWOneCallExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C76557B624AD883E00775A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C76557B824AD883E00775A92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C76557BA24AD883E00775A92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C76557BC24AD883E00775A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C76557BF24AD883E00775A92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C76557C224AD883E00775A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C76557C424AD883E00775A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76557CA24AD885B00775A92 /* OWOneCallExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OWOneCallExample.entitlements; sourceTree = "<group>"; };
 		C7760EE524CDA3E5006E4879 /* OWExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWExtensions.swift; sourceTree = "<group>"; };
+		C7A588F326EB6A900081AD1E /* OWOneCallExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWOneCallExampleApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7BBD1A624CDA38C00AEEE43 /* OWOneCall in Frameworks */,
+				C7A588F726EB6B8C0081AD1E /* OWOneCall in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,13 +60,11 @@
 		C76557B524AD883E00775A92 /* OWOneCallExample */ = {
 			isa = PBXGroup;
 			children = (
+				C7A588F326EB6A900081AD1E /* OWOneCallExampleApp.swift */,
 				C76557BA24AD883E00775A92 /* ContentView.swift */,
 				C7760EE524CDA3E5006E4879 /* OWExtensions.swift */,
-				C76557B624AD883E00775A92 /* AppDelegate.swift */,
-				C76557B824AD883E00775A92 /* SceneDelegate.swift */,
 				C76557CA24AD885B00775A92 /* OWOneCallExample.entitlements */,
 				C76557BC24AD883E00775A92 /* Assets.xcassets */,
-				C76557C124AD883E00775A92 /* LaunchScreen.storyboard */,
 				C76557C424AD883E00775A92 /* Info.plist */,
 				C76557BE24AD883E00775A92 /* Preview Content */,
 			);
@@ -102,7 +96,7 @@
 			);
 			name = OWOneCallExample;
 			packageProductDependencies = (
-				C7BBD1A524CDA38C00AEEE43 /* OWOneCall */,
+				C7A588F626EB6B8C0081AD1E /* OWOneCall */,
 			);
 			productName = OWOneCallExample;
 			productReference = C76557B324AD883E00775A92 /* OWOneCallExample.app */;
@@ -132,7 +126,7 @@
 			);
 			mainGroup = C76557AA24AD883D00775A92;
 			packageReferences = (
-				C7BBD1A424CDA38C00AEEE43 /* XCRemoteSwiftPackageReference "OWOneCall" */,
+				C7A588F526EB6B8C0081AD1E /* XCRemoteSwiftPackageReference "OWOneCall" */,
 			);
 			productRefGroup = C76557B424AD883E00775A92 /* Products */;
 			projectDirPath = "";
@@ -148,7 +142,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76557C324AD883E00775A92 /* LaunchScreen.storyboard in Resources */,
 				C76557C024AD883E00775A92 /* Preview Assets.xcassets in Resources */,
 				C74525C524AD93910096ED6C /* readme.md in Resources */,
 				C76557BD24AD883E00775A92 /* Assets.xcassets in Resources */,
@@ -162,25 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76557B724AD883E00775A92 /* AppDelegate.swift in Sources */,
-				C76557B924AD883E00775A92 /* SceneDelegate.swift in Sources */,
 				C76557BB24AD883E00775A92 /* ContentView.swift in Sources */,
 				C7760EE624CDA3E5006E4879 /* OWExtensions.swift in Sources */,
+				C7A588F426EB6A900081AD1E /* OWOneCallExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C76557C124AD883E00775A92 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C76557C224AD883E00775A92 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C76557C524AD883E00775A92 /* Debug */ = {
@@ -234,7 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -289,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -369,20 +350,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C7BBD1A424CDA38C00AEEE43 /* XCRemoteSwiftPackageReference "OWOneCall" */ = {
+		C7A588F526EB6B8C0081AD1E /* XCRemoteSwiftPackageReference "OWOneCall" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/workingDog/OWOneCall.git";
+			repositoryURL = "https://github.com/workingDog/OWOneCall";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
+				kind = exactVersion;
+				version = 1.2.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C7BBD1A524CDA38C00AEEE43 /* OWOneCall */ = {
+		C7A588F626EB6B8C0081AD1E /* OWOneCall */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C7BBD1A424CDA38C00AEEE43 /* XCRemoteSwiftPackageReference "OWOneCall" */;
+			package = C7A588F526EB6B8C0081AD1E /* XCRemoteSwiftPackageReference "OWOneCall" */;
 			productName = OWOneCall;
 		};
 /* End XCSwiftPackageProductDependency section */

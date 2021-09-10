@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "OWOneCall",
-        "repositoryURL": "https://github.com/workingDog/OWOneCall.git",
+        "repositoryURL": "https://github.com/workingDog/OWOneCall",
         "state": {
           "branch": null,
-          "revision": "f5c8e9d05bcafb4720611a21469832f97378b95a",
-          "version": "1.2.0"
+          "revision": "dbd028790a0f26334a118bbf43ed1a652b37e423",
+          "version": "1.2.1"
         }
       }
     ]
