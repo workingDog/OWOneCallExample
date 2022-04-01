@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "OWOneCall",
-        "repositoryURL": "https://github.com/workingDog/OWOneCall",
-        "state": {
-          "branch": null,
-          "revision": "dbd028790a0f26334a118bbf43ed1a652b37e423",
-          "version": "1.2.1"
-        }
+  "pins" : [
+    {
+      "identity" : "owonecall",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/workingDog/OWOneCall",
+      "state" : {
+        "branch" : "master",
+        "revision" : "331cf6ab23b443a5d20c16c66681c50c538a95e6"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
