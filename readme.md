@@ -7,7 +7,8 @@
 
 Provides for current, forecast and historical weather data through a single function call.
 
-See **ContentView** for the example use.
+See **ContentView** for the example use. Note, you need to add your own `OpenWeather key` 
+in the **ContentView**.
 
 ### Requirement
 
