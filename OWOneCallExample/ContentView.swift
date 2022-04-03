@@ -58,7 +58,9 @@ struct ContentView: View {
             
             Spacer()
             
-        }.onAppear(perform: loadData)
+        }.onAppear {
+            loadData()
+        }
 //        .task {
 //            if let results = await weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: OWOptions(excludeMode: [], units: .metric, lang: "en")) {
 //                weather = results
@@ -72,7 +74,7 @@ struct ContentView: View {
         
         let myOptions = OWOptions(excludeMode: [], units: .metric, lang: "en")
         
-        // for current and forecast
+        // using a binding
         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,
                                         weather: $weather,
                                         options: myOptions)
