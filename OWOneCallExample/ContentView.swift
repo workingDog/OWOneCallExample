@@ -11,7 +11,7 @@ import OWOneCall
 
 struct ContentView: View {
     
-    let weatherProvider = OWProvider(apiKey: "your key here") // <--- here put your key
+    let weatherProvider = OWProvider(apiKey: "your key")  // <--- here use your key
     let lang = "en"         // "ja"
     let frmt = "yyyy-MM-dd" // "yyyy年MM月dd日"
     
@@ -27,9 +27,7 @@ struct ContentView: View {
                 .resizable()
                 .frame(width: 70, height: 65)
                 .foregroundColor(Color.green)
-            
-            Spacer()
-            
+
             if weather.daily != nil {
                 ScrollView (.horizontal) {
                     HStack {
@@ -45,33 +43,51 @@ struct ContentView: View {
                 }
             }
             
+            if weather.alerts != nil {
+                ScrollView {
+                    ForEach(weather.alerts!) { alert in
+                        VStack {
+                            Text(alert.event).font(.title).foregroundColor(.red).padding(20)
+                            Text(alert.description)
+                        }
+                    }
+                }
+            } else {
+                Text("No weather alerts").font(.title).foregroundColor(.green).padding(20)
+            }
+            
             Spacer()
             
         }.onAppear(perform: loadData)
+//        .task {
+//            if let results = await weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: OWOptions(excludeMode: [], units: .metric, lang: "en")) {
+//                weather = results
+//            }
+//        }
     }
     
     func loadData() {
-        // lat: -33.861536, lon: 151.215206,    //  Sydney
+        // lat: -33.861536, lon: 151.215206,    // Sydney
         // lat: 35.661991, lon: 139.762735,     // Tokyo
         
-        //      let myOptions = OWOptions(excludeMode: [.daily, .hourly, .minutely], units: .metric, lang: "en")
+        let myOptions = OWOptions(excludeMode: [], units: .metric, lang: "en")
         
         // for current and forecast
         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,
-                                   weather: $weather,
-                                   options: OWOptions.dailyForecast(lang: lang))
+                                        weather: $weather,
+                                        options: myOptions)
         
-        //         old style callback
-        //         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: OWOptions.dailyForecast(lang: lang)) { response in
-        //                 if let theWeather = response {
-        //                    self.weather = theWeather
-        //                 }
-        //         }
-        
-        // for historical data in the past
-        //         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,
-        //                                          weather: $weather,
-        //                                          options: OWHistOptions.yesterday())
+//         closure style callback
+//        weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: myOptions) { response in
+//            if let theWeather = response {
+//                self.weather = theWeather
+//            }
+//        }
+
+         // for historical data in the past
+//         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,
+//                                          weather: $weather,
+//                                          options: OWHistOptions.yesterday())
     }
     
     func formattedDate(utc: Int) -> String {
@@ -80,6 +96,6 @@ struct ContentView: View {
         dateFormatter.dateFormat = frmt
         return dateFormatter.string(from: Date(timeIntervalSince1970: TimeInterval(utc)))
     }
-    
+     
 }
 
