@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/workingDog/OWOneCall",
       "state" : {
-        "branch" : "async",
-        "revision" : "ac1effa40398634a81efc32e84f4603d67cd65bf"
+        "branch" : "master",
+        "revision" : "75228f8d8f3d03be8acf08d165aae7d99b39ea0b"
       }
     }
   ],
