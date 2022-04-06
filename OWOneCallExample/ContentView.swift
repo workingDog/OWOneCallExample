@@ -23,22 +23,25 @@ struct ContentView: View {
             Spacer()
             Text(formattedDate(utc: weather.current?.dt ?? 0))
             Text(weather.current?.weatherInfo() ?? "")
-            Image(systemName: weather.current?.weatherIconName() ?? "smiley")
-                .resizable()
-                .frame(width: 70, height: 65)
-                .foregroundColor(Color.green)
-
-            if weather.daily != nil {
-                ScrollView (.horizontal) {
-                    HStack {
-                        ForEach(weather.daily!, id: \.self) { daily in
-                            VStack {
-                                Text(formattedDate(utc: daily.dt))
-                                Text(String(format: "%.1f", daily.temp.day)+"°").font(.title)
-                                Text("\(daily.weather.first!.weatherDescription.capitalized)")
-                            }.fixedSize()
-                            Divider().frame(height: 80)
-                        }
+            
+            if let img = weather.current?.weatherIconName() {
+                Image(systemName: img.isEmpty ? "smiley" : img)
+                    .resizable()
+                    .frame(width: 70, height: 65)
+                    .foregroundColor(Color.green)
+            }
+            
+            ScrollView (.horizontal) {
+                HStack {
+                    ForEach(weather.daily ?? []) { daily in
+                        VStack {
+                            let img = daily.weatherIconName().isEmpty ? "questionmark" : daily.weatherIconName()
+                            Label("", systemImage: img).labelStyle(.iconOnly).foregroundColor(.blue)
+                            Text(formattedDate(utc: daily.dt))
+                            Text(String(format: "%.1f", daily.temp.day)+"°").font(.title)
+                            Text("\(daily.weather.first!.weatherDescription.capitalized)")
+                        }.fixedSize()
+                        Divider().frame(height: 80)
                     }
                 }
             }
@@ -61,11 +64,11 @@ struct ContentView: View {
         }.onAppear {
             loadData()
         }
-//        .task {
-//            if let results = await weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: OWOptions(excludeMode: [], units: .metric, lang: "en")) {
-//                weather = results
-//            }
-//        }
+        //        .task {
+        //            if let results = await weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: OWOptions(excludeMode: [], units: .metric, lang: "en")) {
+        //                weather = results
+        //            }
+        //        }
     }
     
     func loadData() {
@@ -75,21 +78,17 @@ struct ContentView: View {
         let myOptions = OWOptions(excludeMode: [], units: .metric, lang: "en")
         
         // using a binding
-        weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,
-                                        weather: $weather,
-                                        options: myOptions)
+        weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, weather: $weather, options: myOptions)
         
-//         closure style callback
-//        weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: myOptions) { response in
-//            if let theWeather = response {
-//                self.weather = theWeather
-//            }
-//        }
-
-         // for historical data in the past
-//         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735,
-//                                          weather: $weather,
-//                                          options: OWHistOptions.yesterday())
+        // closure style callback
+        //        weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: myOptions) { response in
+        //            if let theWeather = response {
+        //                self.weather = theWeather
+        //            }
+        //        }
+        
+        // for historical data in the past
+        //         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, weather: $weather, options: OWHistOptions.yesterday())
     }
     
     func formattedDate(utc: Int) -> String {
@@ -98,6 +97,5 @@ struct ContentView: View {
         dateFormatter.dateFormat = frmt
         return dateFormatter.string(from: Date(timeIntervalSince1970: TimeInterval(utc)))
     }
-     
+    
 }
-
