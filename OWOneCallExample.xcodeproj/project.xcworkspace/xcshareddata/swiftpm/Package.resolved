@@ -1,4 +1,5 @@
 {
+  "originHash" : "2e3e4ce61668519611163605ba9c2b3235f0c680ee25593a5876b3a9821b0ddc",
   "pins" : [
     {
       "identity" : "owonecall",
@@ -6,9 +7,9 @@
       "location" : "https://github.com/workingDog/OWOneCall",
       "state" : {
         "branch" : "master",
-        "revision" : "dedc0338b804110d88a32cd03310d5b3ba0e46c7"
+        "revision" : "b90d029b909107949aa05d6dbe874d2367ebefeb"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

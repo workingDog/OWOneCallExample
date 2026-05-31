@@ -11,7 +11,7 @@ import OWOneCall
 
 struct ContentView: View {
     
-    let weatherProvider = OWProvider(apiKey: "your key")  // <--- here use your key
+    let weatherProvider = OWProvider(apiKey: "YOUR_API_KEY")  // <--- here use your key
     let lang = "en"         // "ja"
     let frmt = "yyyy-MM-dd" // "yyyy年MM月dd日"
     
@@ -61,34 +61,22 @@ struct ContentView: View {
             
             Spacer()
             
-        }.onAppear {
-            loadData()
+        }.task {
+            await loadData()
         }
-        //        .task {
-        //            if let results = await weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: OWOptions(excludeMode: [], units: .metric, lang: "en")) {
-        //                weather = results
-        //            }
-        //        }
     }
     
-    func loadData() {
+    func loadData() async {
         // lat: -33.861536, lon: 151.215206,    // Sydney
         // lat: 35.661991, lon: 139.762735,     // Tokyo
         
         let myOptions = OWOptions(excludeMode: [], units: .metric, lang: "en")
         
         // using a binding
-        weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, weather: $weather, options: myOptions)
-        
-        // closure style callback
-        //        weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, options: myOptions) { response in
-        //            if let theWeather = response {
-        //                self.weather = theWeather
-        //            }
-        //        }
-        
+        await weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, weather: $weather, options: myOptions)
+
         // for historical data in the past
-        //         weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, weather: $weather, options: OWHistOptions.yesterday())
+        // await weatherProvider.getWeather(lat: 35.661991, lon: 139.762735, weather: $weather, options: OWHistOptions.yesterday())
     }
     
     func formattedDate(utc: Int) -> String {
@@ -99,3 +87,4 @@ struct ContentView: View {
     }
     
 }
+
